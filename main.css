@@ -1,0 +1,39 @@
+/*import fonts here, sans serif fonts are good for body but headlines can vary*/
+*{
+   box-sizing: border-box;
+}
+h1,h2,h3{
+    font-family: ;
+}
+section,
+main,
+h1+h1{
+    margin-top: -.7em;
+}
+figure{
+    display: block;
+}
+header {
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: ;
+}
+header, footer{
+    background-color: whitesmoke;
+    padding:.5em;
+    font-size: 1.7em;
+}
+nav li{
+    display: inline-block;
+    width: 24%;
+    padding:0;
+}
+.temp-box{
+    width: 10em;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
