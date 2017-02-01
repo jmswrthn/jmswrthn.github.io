@@ -11,8 +11,8 @@
 struct CharacterSet{
     char name[12];
     char race[12];
-    int strength;
-    int health;
+    int attack;
+    int defense;
 }
 
 void CreateCharacter(){
