@@ -26,7 +26,7 @@ body{
 header, footer{
     background-color:deepskyblue;
     padding:.5em;
-    font-size: .5em;
+
 }
 nav li{
     display: inline-block;
@@ -36,7 +36,7 @@ nav li{
 #temp-box{
     text-align: center;
     width: 10em;
-    background-color: aquamarine;
+    background-image: url(images/sunny.png)
     margin: 0 auto;
 }
 #tempature{
@@ -44,7 +44,16 @@ nav li{
 }
 #city{
     align-content: center;
+    width: 12em;
+    background-color: aqua;
+    margin: 0 auto;
 }
 #selectcity{
     text-align: center
+}
+select{
+    text-align-last: center;
+}
+h2+div{
+    margin-top: -1em;
 }
