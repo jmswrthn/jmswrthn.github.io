@@ -1,90 +1,139 @@
 /*import fonts here, sans serif fonts are good for body but headlines can vary*/
-*{
-   box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     text-align: center;
     font-family: sans-serif;
 }
+
 section,
 main,
-h1+h1{
+h1+h1 {
     margin-top: -.7em;
 }
-figure{
+
+figure {
     display: block;
 }
-header {
 
+header {}
 
-}
-body{
+body {
     margin: 0;
     padding: 0;
     font-size: 1em;
     background-color: skyblue;
 }
-header, footer{
 
-    padding:.5em;
-
+header,
+footer {
+    padding: .5em;
 }
-nav li{
+
+nav li {
     display: inline-block;
     width: 24%;
-    padding:0;
+    padding: 0;
 }
-#logo{
+
+#logo {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     align-items: center;
 }
+
 #logo img {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     align-content: center;
-    margin:0;
-    max-width:100%;
-    max-height:100%;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
-#city{
+
+#city {
     align-content: center;
     width: 12em;
-    background-color: aqua;
-    margin: 0 auto;
-
+    background-color: skyblue;
+    margin: -1.2em auto;
 }
-#city h2{
-    font-size: .1em;
 
+#city h2 {
+    font-family: sans-serif;
+    font-size: .9em;
 }
-#selectcity{
+
+#selectcity {
     text-align: center
 }
-select{
+
+select {
     text-align-last: center;
 }
-#temp-box{
-    text-align: center;
-    width:auto;
+
+#temp-box {
+
+    width: 12em;
     background-image: url("/images/sunny.png");
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-}
-#tempature{
-    text-align: center;
-    font-size: 4em;
-    padding: 0px;
-    margin: 0px;
-    font-weight: bold;
-    background-color: white;
-    opacity: 0.5;
+    background-size: 5em;
+    margin: 1.8em auto;
 }
 
-h2+div{
-    margin-top: -1em;
+#temp-box h2,h3 {
+    font-size: .9em;
+}
+
+#tempature {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: white;
+    opacity: 0.7;
+}
+
+#hightemp {
+    display: inline-block;
+    background-color: white;
+    opacity: 0.4;
+}
+#lowtemp{
+    margin-left: 2.4em;
+    display: inline-block;
+    background-color: white;
+    opacity: 0.4;
+}
+#Summary{
+    margin: -.2em;
+    font-size: .9em;
+    background-color: white;
+    opacity: 0.7;
+}
+h2+div {
+    margin-top: -.8em;
+}
+#precipwinddir{
+
+    padding: .5em;
+    width: 12em;
+    font-size: .8em;
+}
+#precip{
+    margin-top: -.8em;
+}
+#wind{
+    display: inline-block;
+}
+#direction{
+    margin-left: 1em;
+    display: inline-block;
 }
