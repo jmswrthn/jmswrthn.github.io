@@ -136,4 +136,5 @@ h2+div {
 #direction{
     margin-left: 1em;
     display: inline-block;
+    margin-bottom: -.5em;
 }
