@@ -3,6 +3,7 @@
    box-sizing: border-box;
 }
 h1,h2,h3{
+    text-align: center;
     font-family: sans-serif;
 }
 section,
@@ -32,8 +33,18 @@ nav li{
     width: 24%;
     padding:0;
 }
-.temp-box{
+#temp-box{
+    text-align: center;
     width: 10em;
     background-color: aquamarine;
     margin: 0 auto;
+}
+#tempature{
+    text-align: center;
+}
+#city{
+    align-content: center;
+}
+#selectcity{
+    text-align: center
 }
