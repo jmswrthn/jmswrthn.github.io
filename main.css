@@ -1,54 +1,4 @@
-/*import fonts here, sans serif fonts are good for body but headlines can vary*/
 
-
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}s
 
 * {
     box-sizing: border-box;
@@ -62,10 +12,7 @@ h3 {
 }
 
 section,
-main,
-h1+h1 {
-    margin-top: -.7em;
-}
+
 
 figure {
     display: block;
@@ -76,43 +23,45 @@ header {}
 body {
     margin: 0;
     padding: 0;
-    font-size: 1em;
+
     background-color: skyblue;
+    width: 100%;
 }
 
-header,
-footer {
-
-}
-
-nav li {
-    display: inline-block;
-    width: 24%;
-    padding: 0;
+header{
+    width: 100%;
+    background-color: black;
 }
 
 #logo {
-    display:flex;
+    display:inline-block;
     margin: 0;
-    width: auto;
-    background-color: black;
+
+    width: 100%;
+    height: 3em;
+    padding: 0;
+
 }
 #logo h1{
-    font-size: 1em;
+    margin:0;
+    font-size: 2.7em;
     color: azure;
 }
 
 
+
 #city {
+    margin-top: -1em;
     align-content: center;
-    width: 12em;
-    background-color: skyblue;
-    margin: -1.0em auto;
+    width: 100%;
+    background-color: black;
+
 }
 
 #city h2 {
     font-family: sans-serif;
-    font-size: .9em;
+    font-size: 2em;
+    color:azure
 }
 
 #selectcity {
@@ -120,45 +69,52 @@ nav li {
 }
 
 select {
+    font-size: 1.5em;
     text-align-last: center;
+    width: 80%;
 }
 
 #temp-box {
 
-    width: 12em;
+    width: 100%;
     background-image: url("/images/sunny.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 5em;
-    margin: 1.5em auto;
+    background-size:contain;
+    margin-top: 0;
+
 }
+temp
 
 #temp-box h2,h3 {
-    font-size: .9em;
+    font-size: 1.5em;
+    margin: 0em;
 }
 
 #tempature {
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bold;
     background-color: white;
     opacity: 0.7;
+    margin-top: .5em;
+    margin-bottom: 0;
 }
 
 #hightemp {
     display: inline-block;
     background-color: white;
     opacity: 0.4;
+    float: right;
 }
 #lowtemp{
-    margin-left: 2.4em;
     display: inline-block;
     background-color: white;
     opacity: 0.4;
 }
 #Summary{
-    margin: -.2em;
-    font-size: .9em;
+    margin: 0em;
+    font-size: 1.5em;
     background-color: white;
     opacity: 0.7;
 }
@@ -166,21 +122,22 @@ h2+div {
     margin-top: -.8em;
 }
 #precipwinddir{
-
-    padding: .5em;
-    width: 12em;
-    font-size: .8em;
+    background-color: black;
+    padding: 0 .5em 0 .5em;
+    width: 100%;
+    font-size: 1.5em;
+    color: azure;
 }
 #precip{
-    margin-top: -.8em;
+    margin-bottom: 0;
 }
 #wind{
     display: inline-block;
 }
 #direction{
-    margin-left: 1em;
+
     display: inline-block;
-    margin-bottom: -.5em;
+   float:right;
 }
 @media screen(min-width:32em){
     .logo{
