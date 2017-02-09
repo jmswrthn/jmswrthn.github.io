@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/* what is in the function */
 struct CharacterSet{
     char name[12];
     char race[12];
@@ -7,9 +8,8 @@ struct CharacterSet{
     int defense;
 };
 
-/* return character set */
 struct CharacterSet createCharacter(){
-    struct CharacterSet aCharacter;
+    struct CharacterSet aCharacter; /* make me a new one */
     
     printf("Enter character's name: ");
         scanf("%s", aCharacter.name);
@@ -26,16 +26,10 @@ struct CharacterSet createCharacter(){
         scanf("%d", &aCharacter.defense); 
     
     printf("%s is %s and has an attack of %d and a defense of %d.\n", aCharacter.name, aCharacter.race, aCharacter.attack, aCharacter.defense);
-
-    return aCharacter;
-}
-
-int main(){
-    struct CharacterSet aCharacter = createCharacter();
-
-    int sum = -5;
-    while(sum <= 10){
-        sum = aCharacter.attack + aCharacter.defense;
+    
+    /* Checking the variables before the function */
+    int sum = aCharacter.attack + aCharacter.defense;
+    while(sum > 10){
 
         printf("Oops. There’s a problem. The sum of your attack and defense points is greater than 10. Please try again.\n");
         
@@ -46,6 +40,15 @@ int main(){
             scanf("%d", &aCharacter.defense); 
     
         printf("%s is %s and has an attack of %d and a defense of %d.\n", aCharacter.name, aCharacter.race, aCharacter.attack, aCharacter.defense);
+        
+        sum = aCharacter.attack + aCharacter.defense;
     }
+
+    return aCharacter;
+}
+
+int main(){
+    struct CharacterSet aCharacter = createCharacter();
+    
     return 0;
 }
