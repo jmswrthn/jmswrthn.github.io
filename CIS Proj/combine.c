@@ -77,7 +77,7 @@ int attackInterf(){
 	
 	while(firstPWins != 3 && secondPwins != 3){
 		//Player one roll Attack and Defence Calc
-		printf("\nPlayer 1 do you wish to \n(1) Attack (2)Defend: ");
+		printf("\n%s do you wish to \n(1) Attack (2)Defend: ", Playerchar.name);
 		scanf("%d",&firstmenuchoice);
 		while((firstmenuchoice != 1) && (firstmenuchoice != 2)){
 			printf("\n%s you entered:%d please enter a (1 or 2) to \n(1) Attack or (2)Defend: ",Playerchar.name,firstmenuchoice);
@@ -86,83 +86,86 @@ int attackInterf(){
 		dieRoll=roll();
 		if(firstmenuchoice == 1){
 			attackOne = (dieRoll + player1Atk);
-			printf("\nPlayer 1 attack of %d plus a roll of %d as a total attack of %d\n",player1Atk,dieRoll,attackOne);
+			printf("\n%s attack of %d plus a roll of %d as a total attack of %d\n", Playerchar.name,player1Atk,dieRoll,attackOne);
 		}
 		else{
 			defOne = (dieRoll + player1Def);
-			printf("\nPlayer 1 Defence of %d plus a roll of %d as a total Defence of %d\n",player1Def,dieRoll,defOne);
+			printf("\n%s defense of %d plus a roll of %d as a total defence of %d\n",Playerchar.name,player1Def,dieRoll,defOne);
 		}
 		
 		//Player two roll Attack and Defence Calc
-		printf("\nPlayer 2 do you wish to \n(1) Attack (2)Defend: ");
+		printf("\n%s do you wish to \n(1) Attack (2)Defend: ", Player2char.name);
 		scanf("%d",&secondmenuchoice);
 		while((secondmenuchoice != 1) && (secondmenuchoice != 2)){
-			printf("\nPlayer 2 you entered:%d please enter a (1 or 2) to \n(1) Attack or (2)Defend: ",secondmenuchoice);
+			printf("\n%s you entered:%d please enter a (1 or 2) to \n(1) Attack or (2)Defend: ",Player2char.name,secondmenuchoice);
 			scanf("%d",&secondmenuchoice);
 		}
 		dieRoll=roll();
 		if(secondmenuchoice == 1){
 			attackTwo = (dieRoll + player2Atk);
-			printf("\nPlayer 2 attack of %d plus a roll of %d as a total attack of %d\n",player2Atk,dieRoll,attackTwo);
+			printf("\n%s attack of %d plus a roll of %d as a total attack of %d\n",Player2char.name,player2Atk,dieRoll,attackTwo);
 		}
 		else{
 			defTwo = (dieRoll + player2Def);
-			printf("\nPlayer 2 Defence of %d plus a roll of %d as a total Defence of %d\n",player2Def,dieRoll,defTwo);
+			printf("\n%s defence of %d plus a roll of %d as a total defence of %d\n",Player2char.name,player2Def,dieRoll,defTwo);
 		}
 		//both attack
 		if(firstmenuchoice == 1 && secondmenuchoice == 1){
-			printf("\nPlayer 1 had an Attack of %d and a defence of %d while Player 2 had an Attack of %d and a defence of %d\n",attackOne,player1Def,attackTwo,player2Def);
+			printf("\n%s had an attack of %d and a defence of %d while %s had an attack of %d and a defence of %d\n",Playerchar.name,attackOne,player1Def,Player2char.name,attackTwo,player2Def);
 			if((attackOne+player1Def)>(attackTwo+player2Def)){
 				firstPWins++;
-				printf("\nFirst player wins with a total of %d of 3 won\n",firstPWins);
+				printf("\n%s wins with a total of %d of 3 won\n",Playerchar.name,firstPWins);
 			}
 			else if((attackOne+player1Def)<(attackTwo+player2Def)){
 				secondPwins++;
-				printf("\nSecond player wins with a total of %d of 3 won\n",secondPwins);
+				printf("\n%s wins with a total of %d of 3 won\n",Player2char.name,secondPwins);
 			}
 			else{
-				printf("\nBoth players are equaly powerful this round play again\n");
+				printf("\nBoth players, %s and %s, are equaly powerful this round play again\n",Playerchar.name,Player2char.name);
 			}
 		}
 		//p1 attack and p2 defend
 		else if((firstmenuchoice == 1 && secondmenuchoice == 2)){
-			printf("\nPlayer 1 had an Attack of %d and a defence of %d while Player 2 had an Attack of %d and a defence of %d\n",attackOne,player1Def,player2Atk,defTwo);
+			printf("\n%s had an attack of %d and a defence of %d while %s had an attack of %d and a defence of %d\n",Playerchar.name,attackOne,player1Def,Playerchar.name,player2Atk,defTwo);
 			if((attackOne+player1Def)>(player2Atk+defTwo)){
 				firstPWins++;
-				printf("\nFirst player wins with a total of %d of 3 won\n",firstPWins);
+				printf("\n%s wins with a total of %d of 3 won\n",Playerchar.name,firstPWins);
 			}
 			else if((attackOne+player1Def)<(player2Atk+defTwo)){
 				secondPwins++;
-				printf("\nSecond player wins with a total of %d of 3 won\n",secondPwins);
+				printf("\n%s wins with a total of %d of 3 won\n",Player2char.name,secondPwins);
 			}
 			else{
-				printf("\nBoth players are equaly powerful this round play again\n");
+				printf("\nBoth players, %s and %s, are equaly powerful this round play again\n",Playerchar.name,Player2char.name);
 			}
 		}
 		//p1 defend and p2 attack
 		else if((firstmenuchoice == 2 && secondmenuchoice == 1)){
-			printf("\nPlayer 1 had an Attack of %d and a defence of %d while Player 2 had an Attack of %d and a defence of %d\n",player1Atk,defOne,attackTwo,player2Def);	
+			printf("\n%s had an Attack of %d and a defence of %d while %s had an Attack of %d and a defence of %d\n",Playerchar.name,player1Atk,defOne,Player2char.name,attackTwo,player2Def);	
 			if((player1Atk+defOne)>(attackTwo+player2Def)){
 				firstPWins++;
-				printf("\nFirst player wins with a total of %d of 3 won\n",firstPWins);
+				printf("\n%s wins with a total of %d of 3 won\n",Playerchar.name,firstPWins);
 			}
 			else if((player1Atk+defOne)>(attackTwo+player2Def)){
 				secondPwins++;
-				printf("\nSecond player wins with a total of %d of 3 won\n",secondPwins);
+				printf("\n%s wins with a total of %d of 3 won\n",Player2char.name,secondPwins);
 			}
 			else{
-				printf("\nBoth players are equaly powerful this round play again\n");
+				printf("\nBoth players, %s and %s, are equaly powerful this round play again\n",Playerchar.name,Player2char.name);
 			}
 		}
 		//p1 and p2 both defend
 		else{
-			printf("\nBoth players went the Buddha's path attackig none in order achieve nirvana. A tie this round there goes the game.\n");
+			printf("\nBoth players, %s and %s, went the Buddha's path attacking none in order achieve nirvana. A tie this round there goes the game.\n",Playerchar.name,Player2char.name);
 		}
 		//resets for begening of loop
 		firstmenuchoice = 0;
 		secondmenuchoice = 0;
 	}		
+    return 0;
 }
+
+
 int main() {
 	attackInterf();
     return 0;
