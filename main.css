@@ -200,7 +200,7 @@ h2+div {
         height: 20em;
     }
     #temp-box h2{
-        margin-top: 1em;
+        margin-top: .5em;
     }
     #temp-box p{
         font-size: 4.5em;
@@ -213,7 +213,7 @@ h2+div {
         margin-top: .5em;
     }
     #summary{
-        margin-top: 1em;
+        margin-top: .5em;
     }
     #tempature{
         font-size: 3em;
