@@ -139,17 +139,22 @@ h2+div {
     display: inline-block;
    float:right;
 }
-@media screen(min-width:32em){
-    .logo{
-        width:20em;
-        margin: auto;
-    }
-    .logo img{
-        position: absolute
-    }
-    .hide-small{
-        display:block;
-    }
+#hide-small{
+    display:none;
+    background-color: black;
+    color:white;
+}
+#time{
+    overflow-y: auto;
+    width: 8em;
+    height:150px;
 
+}
+@media screen and (min-width: 32em){
+
+    #hide-small{
+        display: inline-block;
+        align-content: center;
+    }
 }
 
