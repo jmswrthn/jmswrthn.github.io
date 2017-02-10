@@ -84,7 +84,6 @@ select {
     margin-top: 0;
 
 }
-temp
 
 #temp-box h2,h3 {
     font-size: 1.5em;
@@ -112,8 +111,9 @@ temp
     background-color: white;
     opacity: 0.4;
 }
-#Summary{
+#summary{
     margin: 0em;
+    margin-bottom: 1.5em;
     font-size: 1.5em;
     background-color: white;
     opacity: 0.7;
@@ -127,6 +127,7 @@ h2+div {
     width: 100%;
     font-size: 1.5em;
     color: azure;
+    height: 8.5em;
 }
 #precip{
     margin-bottom: 0;
@@ -135,26 +136,87 @@ h2+div {
     display: inline-block;
 }
 #direction{
-
     display: inline-block;
-   float:right;
+    float:right;
 }
 #hide-small{
     display:none;
     background-color: black;
-    color:white;
+    color:azure;
+    margin-top: em;
+    height:12.76em;
+    float: right;
+
+}
+#hide-small h4{
+   text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    width: 100%;
 }
 #time{
-    overflow-y: auto;
-    width: 8em;
-    height:150px;
+    overflow-y: scroll;
+    text-align: center;
+    width: 100%;
+    height:5em;
+    font-size: 1.5em;
+
 
 }
-@media screen and (min-width: 32em){
-
+@media screen and (min-width: 32em)and (max-width: 90em){
+    #precipwinddir{
+        display: inline-block;
+        width:50%;
+    }
     #hide-small{
         display: inline-block;
-        align-content: center;
+        width: 50%;
+    }
+    #lowtemp{
+        margin-left: 25%;
+    }
+    #hightemp{
+        margin-right: 25%;
+    }
+}
+@media screen and (min-width: 90em){
+    #precipwinddir{
+        display: inline-block;
+        width:50%;
+        height:10em;
+    }
+    #hide-small{
+        display: inline-block;
+        width: 50%;
+        height:15em;
+    }
+    #time{
+        height: 7em;
+    }
+    #select{
+        font-size: 2em;
+    }
+    #temp-box{
+        height: 20em;
+    }
+    #temp-box h2{
+        margin-top: 1em;
+    }
+    #temp-box p{
+        font-size: 4.5em;
+        margin-top: 1.2em;
+    }
+    #summary{
+        margin-top: 1.5em;
+    }
+    #tempature{
+        font-size: 3em;
+    }
+    #lowtemp{
+        margin-left: 32%;
+    }
+    #hightemp{
+        margin-right: 32%;
     }
 }
 
