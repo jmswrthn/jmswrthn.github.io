@@ -112,7 +112,7 @@ select {
     opacity: 0.4;
 }
 #summary{
-    margin: 0em;
+    margin-top: .5em;
     margin-bottom: 1.5em;
     font-size: 1.5em;
     display:block;
@@ -200,7 +200,7 @@ h2+div {
         font-size: 2em;
     }
     #temp-box{
-        height: 20em;
+        height: 19em;
     }
     #temp-box h2{
         margin-top: .5em;
