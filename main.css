@@ -206,8 +206,14 @@ h2+div {
         font-size: 4.5em;
         margin-top: 1.2em;
     }
+    #lowtemp{
+        margin-top: .5em;
+    }
+    #hightemp{
+        margin-top: .5em;
+    }
     #summary{
-        margin-top: 1.5em;
+        margin-top: 1.2em;
     }
     #tempature{
         font-size: 3em;
@@ -217,6 +223,9 @@ h2+div {
     }
     #hightemp{
         margin-right: 32%;
+    }
+    #direction{
+        margin-right: 20%;
     }
 }
 
