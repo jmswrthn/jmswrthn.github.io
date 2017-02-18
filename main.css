@@ -76,9 +76,7 @@ select {
 #temp-box h2,h3 {
     font-size: 1.5em;
 }
-#temp-box h2{
 
-}
 #curtemp{
     margin: 0;
     width: 100%;
@@ -167,6 +165,9 @@ select {
     }
 }
 @media screen and (min-width: 90em){
+    #temp-box {
+        justify-content:space-around;
+    }
     .lowermenu{
         display: flex;
         flex-flow:wrap;
