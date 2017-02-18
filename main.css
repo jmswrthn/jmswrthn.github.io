@@ -48,6 +48,7 @@ header{
 }
 
 #selectcity {
+
     text-align: center;
     width: 100%;
 }
@@ -157,6 +158,21 @@ select {
 }
 
 @media screen and (min-width: 32em)and (max-width: 90em){
+    #city{
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    #city h2 {
+        width:45%;
+        text-align: right;
+    }
+
+    #selectcity {
+        align-self: center;
+        text-align: left;
+        width: 45%;
+    }
+
     #precip{
         text-align: center;
     }
