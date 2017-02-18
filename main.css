@@ -33,8 +33,6 @@ header{
 #city {
     display: flex;
     flex-flow:wrap;
-    flex-shrink:
-    align-content: center;
     justify-content: center;
     width: 100%;
     background-color: black;
@@ -62,8 +60,10 @@ select {
 
 #temp-box {
     display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+    flex-flow:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     background-image: url("/images/sunny.png");
     background-position: center;
@@ -77,19 +77,14 @@ select {
     font-size: 1.5em;
 }
 #temp-box h2{
+
+}
+#curtemp{
     margin: 0;
-    width: 60%;
+    width: 100%;
     text-align: center;
     background-color: white;
     opacity: .7;
-}
-.temp{
-    width: 100%;
-    height:13em;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    align-items:flex-end;
 }
 
 #tempature {
@@ -98,8 +93,6 @@ select {
     font-weight: bold;
     background-color: white;
     opacity: 0.7;
-    align-self: flex-start;
-
 }
 
 #hightemp {
@@ -115,35 +108,30 @@ select {
 }
 #summary{
     font-size: 1.5em;
+    margin: 0;
     background-color: white;
     opacity: 0.7;
-    width:60%;
+    width:100%;
     text-align: center;
 }
-#lowermenu{
-    display:flex;
 
-}
 #precipwinddir{
     background-color: black;
+    padding: 0 .5em 0 .5em;
     width: 100%;
     font-size: 1.5em;
     color: azure;
     height: 8.5em;
-
-    display:flex;
-    flex-flow:wrap;
-    align-content: center;
-    justify-content: center;
 }
 #precip{
-    width:90%;
+    margin-bottom: 0;
 }
 #wind{
-    width:45%;
+    display: inline-block;
 }
 #direction{
-    width:45%;
+    display: inline-block;
+    float:right;
 }
 
 #hide-small{
@@ -171,20 +159,49 @@ select {
 }
 
 @media screen and (min-width: 32em)and (max-width: 90em){
-
+    #precip{
+        text-align: center;
+    }
+    #tempature{
+        font-size: 4em;
+    }
 }
 @media screen and (min-width: 90em){
     .lowermenu{
-        flex-flow:nowrap;
-       flex-direction: row;
+        display: flex;
+        flex-flow:wrap;
+        flex-direction: row;
+        justify-content: center;
     }
     #precipwinddir{
-        width:20%;
+        text-align: center;
+        width: 50%;
+        padding: 0;
+        height: auto;
     }
     #hide-small{
         width: 50%;
-      ;
-
+        height: 21em;
     }
+    #temp-box{
+        flex-direction:row;
+        height: 20em;
+    }
+    #tempature{
+        font-size: 5em;
+    }
+    #lowtemp{
+        font-size: 2em;
+    }
+    #hightemp{
+        font-size: 2em;
+    }
+    #direction{
+        float:none;
+    }
+    #wind{
+        display:block;
+    }
+
 
 }
