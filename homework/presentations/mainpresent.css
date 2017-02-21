@@ -1,0 +1,65 @@
+
+body {
+    margin:0;
+    padding: 0;
+    background-color: skyblue;
+    width: 100%;
+}
+
+header{
+
+    margin:0;
+    padding: 0;
+    width: 100%;
+    background-color: burlywood;
+
+}
+main{
+
+}
+h2{
+    text-decoration-style: wavy;
+}
+#content{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5em;
+
+}
+#explanation{
+    background-color: floralwhite;
+}
+#samples{
+    color: white;
+    background-color: black;
+}
+#code{
+    color: white;
+    background-color: darkgreen;
+}
+#examples{
+    color: white;
+    background-color: black;
+}
+#whyimportant{
+    color: white;
+    background-color: darkgreen;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+
+@media screen and (min-width: 32em)and (max-width: 90em){
+
+}
+@media screen and (min-width: 90em){
+
+}
