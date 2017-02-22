@@ -22,21 +22,35 @@
     <section id="content">
     <h1 id="title">SRCSET and SIZES attributes</h1>
     <div id="explanation">
-        <p>What they do</p>
+        <h2>What they do</h2>
+        <p>SRCSET and SIZES creates a Responsive Image<br><br>Responsive images don't change just because of a change in envirement<br><br>Use a combination of html and css to display differn't images in the differn't envirements</p>
     </div>
     <div id="samples">
         <h2>Web sites that use it</h2>
+        <p>https://raventools.com</p>
+        <img id="samplepic" alt="sample" src="/images/websitesrcset.jpg">
     </div>
     <div id="code">
         <h2>how it is coded</h2>
         <h3>SRCSET</h3>
+        <p>First we need the same images in diffen't resolutions for ex.) small med and large</p>
+        <img id="catsample" src="/homework/presentations/lynx-small.jpg"
+             srcset="/homework/presentations/lynx-large.jpg 1024w,
+                     /homework/presentations/lynx-med.jpg 640w,
+                     /homework/presentations/lynx-small.jpg 320w"
+             sizes="(min-width: 36em) 33.3vw,30vw"
+             alt="A Cat Example">
+        <img alt="codeSRC" src="/homework/presentations/codeSRCSET.png">
+        <p>SRCSET can also run alone by using display density descriptor</p>
+        <img alt="codeSRCx" src="/homework/presentations/codeSRCSETx.png">
+        <p>We include the orginal src at the begening for backwards compatibility in case the browser does not support SRCSET<br><br>listing the differn'timages follwed by the screen resolution followed by a ',' with each extra img </p>
         <h3>SIZES</h3>
-    </div>
-    <div id="examples">
-        <h2>the code in action</h2>
+        <p>after selecting images of differn't resolutions we then need to specify the size of the images, this is simular to the media queries in practice.<br><br>For example sizes is coded like so <br>sizes="[media query] [length], [media query] [length] so forth"<br><br></p>
+        <img alt="codesize" src="/homework/presentations/codesize.png">
     </div>
     <div id="whyimportant">
         <h2>What role they play</h2>
+        <p>The common use of using SRCSET and SIZES is to allow web pages to load as quick as possible<br><br>No one wants to load an image to the mobile browser that is so large that it kills your data<br><br>Or do they want to load a small image that looks like a thumbnail on their large screen</p>
     </div>
     </section>
 </main>

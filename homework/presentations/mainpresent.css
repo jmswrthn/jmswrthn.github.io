@@ -18,7 +18,7 @@ main{
 
 }
 h2{
-    text-decoration-style: wavy;
+   font-family: cursive;
 }
 #content{
     width: 100%;
@@ -33,22 +33,30 @@ h2{
 }
 #explanation{
     background-color: floralwhite;
+    height: 20em;
 }
 #samples{
     color: white;
     background-color: black;
+    height:24em;
+}
+#samplepic{
+    width: 100%;
 }
 #code{
     color: white;
     background-color: darkgreen;
+    height: 24em;
 }
 #examples{
     color: white;
     background-color: black;
+    height: 24em;
 }
 #whyimportant{
     color: white;
     background-color: darkgreen;
+    height: 24em;
 }
 #title{
     width: 100%;
