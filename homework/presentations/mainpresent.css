@@ -46,7 +46,7 @@ h2{
 #code{
     color: white;
     background-color: darkgreen;
-    height: 24em;
+    height: 54em;
 }
 #examples{
     color: white;
@@ -55,8 +55,11 @@ h2{
 }
 #whyimportant{
     color: white;
-    background-color: darkgreen;
+    background-color: black;
     height: 24em;
+}
+#catsample{
+    align-content: space-around;
 }
 #title{
     width: 100%;
