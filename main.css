@@ -13,7 +13,10 @@ header{
     background-color: black;
 
 }
-
+#selectcity select{
+    background-color: orange;
+    color: black;
+}
 #logo {
     display:flex;
     align-content: center;
