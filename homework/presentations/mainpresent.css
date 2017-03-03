@@ -7,15 +7,16 @@ body {
 }
 
 header{
-
+    text-align: center;
     margin:0;
     padding: 0;
     width: 100%;
     background-color: burlywood;
 
 }
-main{
 
+main{
+    text-align: center;
 }
 h2{
    font-family: cursive;

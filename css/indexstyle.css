@@ -1,0 +1,53 @@
+a:link{
+    color: lightskyblue;
+    text-decoration:none;
+}
+a:visited{
+    color:whitesmoke;
+    text-decoration:none;
+}
+a:hover{
+    background-color: darkorange;
+    color: darkblue;
+    padding: 1px;
+    text-decoration:underline;
+}
+body {
+    color: darkorange;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("/images/codegif.gif");
+}
+
+main {
+    text-align: center;
+}
+footer{
+    text-align: right;
+
+}
+
+h2 {
+    font-family: cursive;
+}
+ul{
+    background-color: green;
+
+
+}
+
+
+
+
+@media screen and (min-width: 32em)and (max-width: 90em) {}
+
+@media screen and (min-width: 90em) {}
