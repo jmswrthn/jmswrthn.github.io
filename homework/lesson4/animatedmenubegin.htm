@@ -5,18 +5,7 @@
     <title>Animated Menu</title>
     <link rel="stylesheet" href="css/animatedMenu.css">
     <!--<script src="js/jquery-3.0.0.min.js"></script>-->
-    <script>
-    $(function(){
-        // All jQuery code goes here
-        $('.navigation>li').hover(function(){
-         //this code is for when over element
-            $(this).addClass('openSesame');
-         },function(){
-            //for when it leaves the element
-            $(this).removeClass('openSesame');
-        })
-    })
-    </script>
+
 </head>
 <body>
     <ul class="navigation">
@@ -28,4 +17,16 @@
     </ul>
 </body>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            // All jQuery code goes here
+            $('.navigation>li').hover(function(){
+                //this code is for when over element
+                $(this).addClass('openSesame');
+            },function(){
+                //for when it leaves the element
+                $(this).removeClass('openSesame');
+            })
+        })
+    </script>
 </html>

@@ -5,35 +5,7 @@
     <title>Alcove Digital Systems</title>
     <link rel="stylesheet" href="css/style.css">
     <!--<script src="js/jquery-3.0.0.min.js"></script>-->
-    <script>
-    $(function(){
-        // jQuery Code goes here
-        //console.log($('input[type="text"]').css('background-color'));
-        var toggleStyle = function(){
 
-            var inputFields = $('input[type="text"]');
-
-            if(inputFields.css('background-color')==='rgb(255, 0, 0)'){
-                //set background color to white
-                inputFields.css('background-color','rgb(255,255,255)');
-            }else{
-                //set background color to red
-                inputFields.css('background-color','rgb(255, 0, 0)');
-            }
-
-        }
-        $('#ReqAQuoteBtn').click(toggleStyle);
-        //$('.coreValues').prepend("<li><strong>This is brand new!!</stong></li>");
-        //$("<li><strong>This is great!!</stong></li>").prependTo(".coreValues");
-        var nameVal=$('input[name="nameVal"]');
-        function FillEmpty(){
-            if(nameVal.val()==''){
-                nameVal.val('John Doe');
-            }
-        }
-        $('#ReqAQuoteBtn').click(FillEmpty);
-    })
-    </script>
 </head>
 <body>
 <!-- Master Container Div -->
@@ -127,8 +99,44 @@
 
         <div class="footer">
             <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+            <a href="/homework/lesson4/animatedmenubegin.htm"><br><br>|Animated Menu|</a>
+            <a href="/homework/lesson4/dropdownmenubegin.htm">|Drop Down Menu|</a>
+            <a href="/homework/lesson4/fruitbasketbegin.htm">|Fruit Basket|</a>
+            <a href="/homework/lesson4/Inserthtmlbegin.htm">|Insert HTML|</a>
+            <a href="/homework/lesson4/togglebuttonbegin.htm">|Toggle Button|</a>
+            <p><br></p>
         </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            // jQuery Code goes here
+            //console.log($('input[type="text"]').css('background-color'));
+            var toggleStyle = function(){
+
+                var inputFields = $('input[type="text"]');
+
+                if(inputFields.css('background-color')==='rgb(255, 0, 0)'){
+                    //set background color to white
+                    inputFields.css('background-color','rgb(255,255,255)');
+                }else{
+                    //set background color to red
+                    inputFields.css('background-color','rgb(255, 0, 0)');
+                }
+
+            }
+            $('#ReqAQuoteBtn').click(toggleStyle);
+            //$('.coreValues').prepend("<li><strong>This is brand new!!</stong></li>");
+            //$("<li><strong>This is great!!</stong></li>").prependTo(".coreValues");
+            var nameVal=$('input[name="nameVal"]');
+            function FillEmpty(){
+                if(nameVal.val()==''){
+                    nameVal.val('John Doe');
+                }
+            }
+            $('#ReqAQuoteBtn').click(FillEmpty);
+        })
+    </script>
 </body>
 </html>
