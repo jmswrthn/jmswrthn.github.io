@@ -2,16 +2,17 @@
 $(function () {
 
     var status = $('#status');
-
+    var lat = 42.011902;
+    var long = -111.803757;
+    getData(lat, long);
     (function getGeoLocation() {
         status.text('Getting Location...');
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
-                var lat = position.coords.latitude;
-                var long = position.coords.longitude;
+
 
                 // Call the getData function, send the lat and long
-                getData(lat, long);
+
 
             });
         } else {
@@ -46,15 +47,15 @@ $(function () {
                 $('small').append(time);
 
                 $("#cover").fadeOut(250);
+            }
+        });
+
     }
-});
 
-}
-
-// A function for changing a string to TitleCase
-function toTitleCase(str) {
-    return str.replace(/\w+/g, function (txt) {
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
-}
+    // A function for changing a string to TitleCase
+    function toTitleCase(str) {
+        return str.replace(/\w+/g, function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    }
 });

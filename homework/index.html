@@ -19,7 +19,7 @@
                 <h2>For The City Of</h2>
                 <div id="selectcity">
                     <select name="linklist" onchange="location = this.value;">
-                        <option value="/homework/">Current Location</option>
+                        <option id="curent_loc" value="/homework/">Current Location</option>
                         <option value="/homework/mobileweathergreenville.html">Greenville, SC 29601</option>
                         <option value="/homework/mobileweatherfranklin.html">Franklin, ID 83237</option>
                         <option value="">Springfield, IL 62701</option>
@@ -29,46 +29,22 @@
             <h2 id="curtemp">Current Temp</h2>
             <section id="temp-box">
 
-                <h3 id="lowtemp">Low Temp<br>55°</h3>
-                <p id="tempature">55°</p>
-                <h3 id="hightemp">High Temp<br>84°</h3>
-
+                <h3 id="lowtemp">Low Temp<br></h3>
+                <p id="tempature"></p>
+                <h3 id="hightemp">High Temp<br></h3>
 
             </section>
-            <h3 id="summary">Afternoon Thunderstorms</h3>
+            <h3 id="summary"></h3>
             <div class="lowermenu">
                 <section id="precipwinddir">
-                    <h4 id="precip">Precip:<br> 70</h4>
-                    <h4 id="wind">Wind:<br>15 - 20mph</h4>
-                    <h4 id="direction">Direction:<br>West</h4>
+                    <h4 id="precip"></h4>
+                    <h4 id="wind"></h4>
+                    <h4 id="direction"></h4>
                 </section>
                 <section id="hide-small">
                     <h4 id="hourlytitle">Hourly Tempature</h4>
                     <div id="time">
-                        <p>12am - 55°<br>
-                            1am - 56°<br>
-                            2am - 56°<br>
-                            3am - 56°<br>
-                            4am - 57°<br>
-                            5am - 57°<br>
-                            6am - 58°<br>
-                            7am - 62°<br>
-                            8am - 63°<br>
-                            9am - 67°<br>
-                            10am - 70°<br>
-                            11am - 73°<br>
-                            12pm - 77°<br>
-                            1pm - 80°<br>
-                            2pm - 84°<br>
-                            3pm - 83°<br>
-                            4pm - 83°<br>
-                            5pm - 80°<br>
-                            6pm - 79°<br>
-                            7pm - 74°<br>
-                            8pm - 70°<br>
-                            9pm - 68°<br>
-                            10pm - 60°<br>
-                            11pm - 58°</p>
+
                     </div>
                 </section>
             </div>
@@ -77,6 +53,8 @@
             <p>Made by James Worthen  2017</p><br>
             <a href="/homework/wireframes.html">Wireframes</a>
         </footer>
+        <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+        <script src="/homework/remote_wu.js"></script>
     </body>
 
 </html>
