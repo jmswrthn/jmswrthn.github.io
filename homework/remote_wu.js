@@ -38,8 +38,10 @@ $(function () {
                 var winddir = data['current_observation']['wind_dir'];
                 var windspeed = data['current_observation']['wind_mph'];
                 var time = data['current_observation']['observation_time_rfc822'];
+                var precip = data['current_observation']['precip_today_string'];
                 var forecasthourly=data['hourly_forecast'];
                 var hourly=new Array(36);
+
                 for(var i =0;i<forecasthourly.length;i++){
                     hourly[i]=forecasthourly[i]['FCTTIME']['civil']+" - "+forecasthourly[i]['temp']['english']+"\u00B0F ";
 
@@ -48,7 +50,7 @@ $(function () {
                 $("title").prepend(city + ", " + state + " ");
                 $("#tempature").prepend(Math.round(temp_f) + "\u00B0F");
                 $('#summary').text(toTitleCase(summary));
-                $('#add1').text("Todays Humidity is: " + humidity);
+                $('#precip').text("Preciptation: " + precip);
                 $('#direction').text("Wind Direction: " + winddir);
                 $('#wind').text("Wind Speed: " + windspeed + " Mph");
                 $('small').append(time);
