@@ -36,7 +36,7 @@ $(function () {
                 var windspeed = data['current_observation']['wind_mph'];
                 var time = data['current_observation']['observation_time_rfc822'];
 
-                $("#cityDisplay").prepend(city+", "+state);
+                $("#cityDisplay").text(city+", "+state);
                 $("title").prepend(city+", "+state+" ");
                 $("#currentTemp").prepend(Math.round(temp_f)+"\u00B0F");
                 $('#summary').text(toTitleCase(summary));
