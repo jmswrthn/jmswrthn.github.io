@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Weather</title>
-        <meta name="viewport" content="width=device-width">
-        <link type="text/css" rel="stylesheet" href="/main.css">
-        <script src="/linklistjs.js"></script>
-    </head>
-    <body>
-        <header>
-            <section id="logo">
-                <h1>Worth Weather</h1>
-            </section>
-        </header>
 
-        <main>
-            <section id="city">
-                <h2>For The City Of</h2>
-                <div id="selectcity">
-                    <select name="linklist" onchange="location = this.value;">
-                        <option id="curent_loc" value="/homework/">Current Location</option>
-                        <option value="/homework/mobileweathergreenville.html">Greenville, SC 29601</option>
-                        <option value="/homework/mobileweatherfranklin.html">Franklin, ID 83237</option>
-                        <option value="">Springfield, IL 62701</option>
-                    </select>
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="/main.css">
+    <script src="/linklistjs.js"></script>
+</head>
+<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. James Worthen
+* 2. Johnathen Allen
+* 3. Scott Croft
+* 4.
+* 5.
+* ******************************************** -->
+
+<body>
+    <header>
+        <section id="logo">
+            <h1>Worth Weather</h1>
+        </section>
+    </header>
+
+    <main>
+        <section id="city">
+            <h2>For The City Of</h2>
+            <div id="selectcity">
+                <select name="linklist" onchange="location = this.value;">
+                    <option id="curent_loc" value="/homework/">Current Location</option>
+                    <option value="/homework/mobileweathergreenville.html">Greenville, SC 29601</option>
+                    <option value="/homework/mobileweatherfranklin.html">Franklin, ID 83237</option>
+                    <option value="">Springfield, IL 62701</option>
+                </select>
+            </div>
+        </section>
+        <h2 id="curtemp">Current Temp</h2>
+        <section id="temp-box">
+
+            <h3 id="lowtemp">Low Temp<br></h3>
+            <p id="tempature"></p>
+            <h3 id="hightemp">High Temp<br></h3>
+
+        </section>
+        <h3 id="summary"> cond</h3>
+        <div class="lowermenu">
+            <section id="precipwinddir">
+                <h4 id="precip"> inc</h4>
+                <h4 id="wind">mph </h4>
+                <h4 id="direction"> dir</h4>
+            </section>
+            <section id="hide-small">
+                <h4 id="hourlytitle">Hourly Tempature</h4>
+                <div id="time">
+
                 </div>
             </section>
-            <h2 id="curtemp">Current Temp</h2>
-            <section id="temp-box">
-
-                <h3 id="lowtemp">Low Temp<br></h3>
-                <p id="tempature"></p>
-                <h3 id="hightemp">High Temp<br></h3>
-
-            </section>
-            <h3 id="summary"> cond</h3>
-            <div class="lowermenu">
-                <section id="precipwinddir">
-                    <h4 id="precip"> inc</h4>
-                    <h4 id="wind">mph </h4>
-                    <h4 id="direction"> dir</h4>
-                </section>
-                <section id="hide-small">
-                    <h4 id="hourlytitle">Hourly Tempature</h4>
-                    <div id="time">
-
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <p>Made by James Worthen  2017</p><br>
-            <a href="/homework/wireframes.html">Wireframes</a>
-        </footer>
-        <!--<script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>-->
-        <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-        <script src="/homework/remote_wu.js"></script>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <p>Made by James Worthen 2017</p>
+        <br>
+        <a href="/homework/wireframes.html">Wireframes</a>
+    </footer>
+    <!--<script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="/homework/remote_wu.js"></script>
+</body>
 
 </html>
