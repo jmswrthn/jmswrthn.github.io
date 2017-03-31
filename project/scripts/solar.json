@@ -1,0 +1,19 @@
+{
+    "Rexburg": {
+        "City": "Rexburg",
+        "State": "ID",
+        "zip": 83440,
+        "PartialPhaseStart": "10:15:42AM",
+        "TotalityStart": "11:33:14AM ",
+        "TotalityLength":"2m 17s",
+
+    },
+    "IdahoFalls": {
+        "City": "Idaho Falls",
+        "State": "ID",
+        "zip": 83401,
+        "PartialPhaseStart": "10:15:10AM",
+        "TotalityStart": "11:33:04AM",
+        "TotalityLength":"1m 41s",
+    }
+}
