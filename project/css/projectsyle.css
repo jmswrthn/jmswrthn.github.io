@@ -1,0 +1,241 @@
+/*Gerneral CSS */
+
+html {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+}
+
+head {
+    height: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    height: 50px;
+    font-size: 2.4em;
+    margin: 0;
+    color: darkgoldenrod;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+    color: darkgoldenrod;
+}
+
+
+/*Header CSS */
+
+#page-header {
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+    background-image: url("/project/media/solareclipseicon50.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, 100%;
+    height: 50px;
+}
+
+
+/*Nav CSS */
+
+#page-nav {
+    background-color: black;
+}
+
+#page-nav ul {
+    display: flex;
+    border: 1px solid black;
+    border-bottom: 1px solid white;
+    list-style: none;
+}
+
+#page-nav .flexlist li {
+    display: flex;
+    flex: auto;
+    text-align: center;
+    width: 15.6%;
+
+}
+
+#page-nav .flexlist {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#page-nav a {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 1% 5%;
+    text-decoration: none;
+}
+
+#page-nav a:hover {
+    background-color: orangered;
+    color: white;
+    border-bottom: 1px solid orange;
+}
+
+
+/*Body CSS */
+#content-media{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.featured-video{
+    width:90%;
+}
+#content-media p{
+    color:white;
+}
+.map-image{
+    margin: 2% 5%;
+    color:white;
+}
+.map-image img{
+    width:100%;
+}
+#content-text{
+    background-color: darkgoldenrod;
+}
+#content-text p {
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    margin:5%;
+}
+#content-text a{
+    color: aliceblue;
+    justify-content: center;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+
+/*Footer CSS */
+
+#footer-content {
+    background-color: darkblue;
+    width: 100%;
+    justify-content: center;
+}
+
+#footer-content a,footer-content p {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: none;
+    width: 45%;
+}
+
+#footer-content .flexlist {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#footer-content p {
+    text-align: center;
+    font-style: italic;
+    background-color: darkgoldenrod;
+    color: black;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 45%;
+}
+
+#page-title {
+    background-color: darkblue;
+}
+
+/* ***** Medium Screens ***** */
+@media screen and (min-width: 44em) {
+    h1 {
+        height: 100px;
+        font-size: 3.4em;
+    }
+    h2 {
+        font-size: 2.8em;
+    }
+    /*Header CSS */
+    #page-header {
+        background-image: url("/project/media/solareclipseicon100.jpg");
+        height: 100px;
+    }
+    /*Nav CSS */
+    #page-nav .flexlist li {
+        font-size: 2em;
+    }
+    /*Body CSS */
+    #content-text p {
+        font-size: 2.4em;
+    }
+
+    /*Footer CSS */
+    #footer-content a{
+        font-size: 2em;
+    }
+    #footer-content p{
+        font-size: 2em;
+    }
+}
+/* ***** Large Screens ***** */
+@media screen and (min-width: 60em){
+    h1 {
+        height: 100px;
+        font-size: 4.4em;
+    }
+    h2 {
+        font-size: 3.8em;
+    }
+    /*Header CSS */
+    #page-header {
+        background-image: url("/project/media/solareclipseicon150.jpg");
+        height: 150px;
+    }
+    /*Nav CSS */
+    #page-nav .flexlist li {
+        font-size: 2.5em;
+    }
+    /*Body CSS */
+    #content-text p {
+        font-size: 3em;
+    }
+    #content-media{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .map-image{
+        width:50%;
+    }
+
+    /*Footer CSS */
+    #footer-content a{
+        font-size: 2.4em;
+    }
+    #footer-content p{
+        font-size: 2.4em;
+    }
+}
+}
