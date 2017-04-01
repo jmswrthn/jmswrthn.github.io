@@ -39,6 +39,6 @@ jQuery(document).ready(function ($) {
             }
         });
     }
-    //ajaxFromLocalJson("Franklin");
-    ajaxFromApi();
+    ajaxFromLocalJson("Franklin");
+    //ajaxFromLocalJson();
 });
