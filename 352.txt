@@ -1,0 +1,36 @@
+#!/bin/bash
+LINES=()
+while IFS= read -r line 
+do
+  LINES+=("$line")
+done < "student.dat"
+#sort
+IFS=$'\n' sorted=($(sort <<<"${LINES[*]}"))
+unset IFS
+
+echo "Please Enter Students Name: "
+read NAME
+
+length=${#sorted[@]}
+start=0
+end=$(($length - 1))
+match=0
+
+while [[ $start -le $end ]]; do 
+	middle_i=$((start + ((end - start)/2)))
+	middle_item=${sorted[$middle_i]}
+	IFS=':' read -a midArray <<< "$middle_item"
+
+	if [[ ${midArray[0]} > $NAME ]]; then
+		end=$((middle_i-1))
+	elif [[ ${midArray[0]} < $NAME ]]; then
+		start=$((middle_i+1))
+	else 
+		match=1
+		echo "${midArray[0]}'s grade is a(n): $(midArray[1]}."
+		break
+	fi
+done
+if [[ $match = 0 ]]; then
+	echo "Not a Match"
+fi
